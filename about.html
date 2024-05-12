@@ -2,60 +2,83 @@
 <html>
     <head>
         <title>Schmalgauzen</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+        <link rel="stylesheet" type="text/css" href="style.css">
     </head>
     <body bgcolor="#fff4f4">
-        <h1 align = "center">Про гурт</h1> 
-        <table border="1" bordercolor="#fff4f4" width="100%" align="center">
-            <tbody>
-                <tr>
-                    <td align="center" colspan="2">
-                        <h3>Створення гурту</h3>
-                    </td>
-                </tr>
-                <tr>
-                    <td colspan="2">
-                        <img src="img/About_Create_A_Group.jpg" width="300" height="300" align="left" hspace="5px">
+        <!--header-->
+        <header>
+            <div class="logo">
+                <a href="main.html">Schmalgauzen</a>
+            </div>
+            <ul class="navbar">
+                <li><a href="main.html"><b class="sizeb">Головна сторінка</b></a></li>
+                <li><a href="about.html"><b class="sizeb current_page">Про гурт</b></a></li>
+                <li><a href="music.html"><b class="sizeb">Музика</b></a></li>
+                <li><a href="video.html"><b class="sizeb">Відео</b></a></li>
+                <li><a href="merch.html"><b class="sizeb">Мерч</b></a></li>
+                <li><a href="gallery.html"><b class="sizeb">Галерея</b></a></li>
+            </ul>
+        </header>
+        <!--banner-->
+        <section class="banner">
+            <h1>Про гурт</h1>
+        </section>
+        <div id = "leftBlock"></div>
+        <!--about-->
+        <div id = "infoBlock">
+            <div class="Block_about">
+                <img src="img/About_Create_A_Group.jpg" class="about_left_image">
+                <div class="title_with_text">
+                    <h2 class="about_title">Створення гурту</h2>
+                    <p class="text-justify">
                         Днем народження гурту Schmalgauzen визнають 9 липня 2020 року, коли відбувся їх перший 
                         концерт. Початково гурт був сформований в університеті Карпенка-Карого, де зібралися всі 
-                        його учасники.  За словами учасників гурту, вперше ідея створити гурт прийшла на першому 
+                        його учасники. За словами учасників гурту, вперше ідея створити гурт прийшла на першому 
                         курсі після виконання університетського завдання "створення авторської пісні", що стало 
                         своєрідним викликом для хлопців, оскільки грати хоч на якомусь музичному інструменті вмів 
                         тільки Михайло Матюхін. Інші учасники просто взяли інструменти і навчались всьому "на ходу".
-                    </td>
-                </tr>
-                <tr>
-                    <td align="center" colspan="2">
-                        <h3>Назва гурту</h3>
-                    </td>
-                </tr>
-                <tr>
-                    <td colspan="2">
-                        <img src="img/About_Name.jpg" width="300" height="300" align="right" hspace="5px">
+                    </p>
+                </div>
+            </div>
+            <div class="Block_about">
+                <div class="title_with_text">
+                    <h2 class="about_title">Назва гурту</h2>
+                    <p class="text-justify">
                         Ідея для назви гурту прийшла тоді, коли хлопці вирішили провести музичний концерт, готуючи власні 
                         авторські пісні. Під час одного з прослуховувань викладач Андрій Самінін (відомий український актор 
                         театру, кіно і дубляжу) сказав: «Тут має бути якийсь Шмальгаузен!». Це слово стало для хлопців 
                         символом енергії та драйву, яке в майбутньому стане назвою їх музично – театрального гурту. 
-                    </td>
-                </tr>
-                <tr>
-                    <td align = "center" colspan="2">
-                        <h3>Концепція гурту</h3>
-                    </td>
-                </tr>
-                <tr>
-                    <td colspan="2">
-                    <img src="img/About_Concept.jpg" width="450" height="300" align="left" hspace="5px">
-                        Згодом гурт зазнавав змін як у своїй концепції, так і у складі. Спочатку було більше 
-                        акторства, а з часом — більше музики. Після 24 лютого 2022 року група випустила свій 
-                        останній альбом російською мовою і прийняла новий музичний шлях. Schmalgauzen працює 
-                        у жанрі пісенного мистецтва, в якому поєднуються театральні вистави та драматургія. 
-                        Фактично, це синтез музики і акторської майстерності у гармонійному співвідношенні. 
-                        У одних програмах може бути більше акценту на театрі, а в інших — на музиці, так само, 
-                        як і в їхніх піснях.
-                    </td>
-                </tr>
-            </tbody> 
-        </table>
-        <a href="index.html" title="Повернутись на головну"><img src="img/button.jpg" width="400pt"></a>
+                    </p>
+                </div>
+                <img src="img/About_Name.jpg" class="about_right_image">
+            </div>
+            <div class="Block_about">
+                <img src="img/About_Concept.jpg" class="about_left2_image">
+                <div class="title_with_text">
+                    <h2 class="about_title">Концепція гурту</h2>
+                    <p class="text-justify">
+                        Згодом гурт зазнавав змін як у своїй концепції, так і у складі. Спочатку було більше акторства, 
+                        а з часом — більше музики. Після 24 лютого 2022 року група випустила свій останній альбом 
+                        російською мовою і прийняла новий музичний шлях. Schmalgauzen працює у жанрі пісенного мистецтва, 
+                        в якому поєднуються театральні вистави та драматургія. Фактично, це синтез музики і акторської 
+                        майстерності у гармонійному співвідношенні. У одних програмах може бути більше акценту на театрі, 
+                        а в інших — на музиці, так само, як і в їхніх піснях.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div id = "rightBlock"></div>
+        <!--footer-->
+        <footer>
+            <div class="share">
+                <a href="https://www.instagram.com/schmalgauzen/" class="fab fa-instagram"></a>
+                <a href="https://www.youtube.com/@schmalgauzen" class="fab fa-youtube"></a>
+                <a href="https://www.tiktok.com/@schmalgauzen?_t=8kSPp4hDPVN&_r=1" class="fab fa-tiktok"></a>
+                <a href="https://www.facebook.com/people/schmalgauzen/100039843828259/" class="fab fa-facebook-f"></a>
+                <a href="https://twitter.com/schmalgauzen?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor" class="fab fa-twitter"></a>
+                <a href="https://open.spotify.com/artist/1qqW4QBTgFMH2Vpzwboo8z?si=FMHEUFGyRem_5ry4Xz_wBA" class="fab fa-spotify"></a>
+            </div>
+        </footer> 
     </body>
 </html>

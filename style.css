@@ -1,11 +1,432 @@
-.pos {
-    position: absolute;
-    top: 15%;
-    left: 28%;
+/*Стилі тексту*/
+p {
+    font-size: 14pt;
+    font-family: "Times New Roman";
+    color: rgb(66, 0, 0);
 }
-
-.main {
+h1 {
+    font-size: 64pt;
+    font-family: "Times New Roman";
+    color:#fff4f4;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.5);
+}
+h2 { 
+    font-size: 24pt;
+    font-family: "Times New Roman";
+    color: rgb(66, 0, 0);
+}
+h3 {
+    font-size: 14pt;
+    font-family: "Times New Roman";
+    color: rgb(66, 0, 0);
+}
+.sizeb{
+    font-size: 16pt;
+    font-family: "Times New Roman";
+}
+.text-justify {
+    text-align: justify;
+}
+/* Шапка*/
+header{
+    position: fixed;
+    width: 94%;
+    top: 0; right: 0;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #fff4f4;
+    padding:15px 3%;
+    box-shadow: 2px 2px 5px rgba(55, 1, 1, 0.805); 
+    transition: 0,2s;
+    font-family: "Times New Roman";
+}
+/*Меню*/
+.navbar{
+    display: flex;
+}
+.navbar a {
+    font-size: 16px;
+    padding: 11px 15px;
+    color: rgb(66, 0, 0);
+    font-weight: 600; 
+    text-decoration: none;
+    transition: text-decoration 0.3s ease;
+}
+.navbar a:hover {
+    text-decoration: underline;
+}
+/*Колір поточної обраної сторінки*/
+.current_page{ 
+    color: rgb(143, 17, 0);
+}
+.current_page:hover {
+    text-decoration: underline;
+}
+/*Лого (назва гурту)*/
+.logo {
+    display: flex;
+}
+.logo a {
+    padding: 11px 15px;
+    color: rgba(55, 1, 1);
+    font-size: 24px;
+    font-weight: 600; 
+    text-decoration: none;
+}
+.logo a:hover {
+    color: rgb(86, 5, 5);
+    text-decoration: underline;
+}
+*{
+    list-style: none;
+    transition: all .2s linear;
+    margin: 0; padding: 0;
+}
+/*Банер*/
+.banner{
+    width: calc(96%+15px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: url(img/Банер1.jpg) no-repeat;
+    min-height: 100vh;
+    background-size: cover;
+    background-position: center;
+    background-size: 100% auto;
+    margin-top: -40px;
+    transition: none;
+}
+/*Блоки*/
+#leftBlock, #rightBlock {
+    height: 30px;
+    padding: 10px;
+    margin: 5px;
+    float: left;
+    left: 50%;
+}
+#infoBlock {
+    width: 75%;
+    padding: 10px;
+    float: left;
+    left: 50%;
+    margin-top: -50px;
+}
+#leftBlock{
+    width: 10%;
+}
+#rightBlock {
+    width:9%;
+}
+/*Для головної сторінки*/
+.main_image {
+    width: 49%;
+    height: auto;
+    float: left;
+    margin-right: 20px;
+}
+.firstBlock_main{
+    display: flex;
+    margin-bottom: 20px;
+}
+video{
+    width: 100%;
+}
+.main_video{
+    width: 49%;
+}
+.transparent{
+    color: rgba(0, 0, 0, 0.6);
+}
+.secondBlock_main{
+    margin-bottom: 20px;
+    justify-content: space-between;
+    display: flex;
+}
+/*Про гурт*/
+.about_left_image{
+    width: 500px;
+    float: left;
+    margin-right: 20px;
+}
+.about_right_image{
+    width: 500px;
+    float: left;
+    margin-left: 20px;
+}
+.about_left2_image{
+    width: 500px;
+    float: left;
+    margin-right: 20px;
+}
+.Block_about{
+    display: flex;
+    margin-bottom: 20px;
+}
+.title_with_text{
+    display: block;
+    align-items:center;
+}
+.about_title{
+    text-align: center;
+    margin: 25px;
+}
+/*Музика*/
+.music_title{
+    margin: 25px;
+}
+.firstBlock_music{
+    display: block;
+    margin-bottom: 20px;
+}
+.secondBlock_music{
+    display: block;
+    margin-bottom: 20px;
+}
+.thirdBlock_music{
+    display: block;
+    margin-bottom: 20px;
+}
+.music_collection{
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+}
+.music-container {
+    position: relative;
+    display: inline-block;
+    overflow: hidden;
+    width: 250px;
+    height: 250px;
+    margin: 3px;
+    border: 1px solid rgba(0, 0, 0, 0.117);
+}
+.music_picture {
+    display: block;
+    width: 100%;
+    transition: transform 0.2s ease;
+}
+.overlay {
     position: absolute;
-    top: 60%;
-    left: 2%;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+}
+.text_for_music {
+    color: #fff4f4;
+    font-size: 18px;
+    text-align: center;
+}
+.music-container:hover .overlay {
+    opacity: 1;
+}
+.music-container:hover .music_picture {
+    transform: scale(1.05);
+}
+/*Відео*/
+.Block_video{
+    margin-bottom: 20px;
+    justify-content: space-between;
+    display: flex;
+    flex-wrap: wrap;
+}
+.title_and_video {
+    width: 49%;
+    display: block;
+    text-align: center;
+    margin-bottom:15px;
+}
+.title_and_video video {
+    height: 300px;
+}
+.title_and_video video[poster="img/фото Сірі туфлі.png"] {
+    height: 335px;
+}
+.for_coment_under_videos p{
+    text-align: center;
+    color: rgba(31, 0, 0, 0.5);
+    margin-bottom: 10px;
+}
+/*Мерч*/
+.Block_merch{
+    margin-bottom: 20px;
+    justify-content: flex-start;
+    display: flex;
+    flex-wrap: wrap;
+}
+.merch_and_title{
+    display: inline-block;
+    text-align: center;
+    align-items: center; 
+    margin-top: 15px;
+    margin-bottom: 30px;
+    margin-left: 22px;
+}
+.merch-container{
+    overflow: hidden; 
+    width: 320px;
+    height: 260px;
+    border: 1px solid rgba(0, 0, 0, 0.117); 
+}
+.merch_picture{
+    width: 100%;
+    height: 100%;
+    transition: transform 0.2 ease;
+}
+.merch_and_title:hover .merch_picture{
+    transform: scale(1.05);
+}
+.merch_and_title a{
+    text-decoration: none;
+}
+.merch_and_title a:hover{
+    color: rgb(66, 0, 0);
+    text-decoration: underline;
+}
+/*Галерея*/
+.Block_gallery{
+    margin-bottom: 20px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+}
+.container{
+    position: relative;
+    width: 100%;
+    padding-bottom: 51%;
+}
+.slide_img{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center; 
+}
+.slide_img img{
+    width: 83%;
+    height: 100%;
+}
+#i1, #i2, #i3, #i4, #i5, #i6, #i7, #i8, #i9{
+    display: none;
+}
+.pre, .nxt{
+    width: 7%;
+    height: 14%;
+    position:absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: #fff4f4;
+    z-index: 99;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    border-radius: 20%;
+    border: solid 0.5px #ffbebe;
+    margin: 5px;
+    overflow: hidden; 
+}
+.pre img, .nxt img{
+    width: 50%;
+    height: auto;
+    transition: transform 0.2s ease; 
+}
+.pre:hover img, .nxt:hover img{
+    transform: scale(1.1);
+}
+.pre:hover, .nxt:hover{
+    background: #ffe3e3;
+    border: solid 0.5px #ffa7a7
+}
+.pre{
+    left: 0;
+}
+.nxt{
+    right: 0;
+}
+.nav{
+    width: 100%;
+    height: 11px;
+    bottom: 7%;
+    position: absolute;
+    text-align: center;
+    z-index: 99;
+}
+.dots{
+    top: -5px;
+    width: 20px;
+    height: 20px;
+    margin: 0 4px;
+    position: relative;
+    border-radius: 50%;
+    display: inline-block;
+    background: rgba(112, 46, 46, 0.4);
+}
+.slide_img{
+    z-index: -1;
+}
+#i1:checked ~ #one,
+#i2:checked ~ #two,
+#i3:checked ~ #three,
+#i4:checked ~ #four,
+#i5:checked ~ #five,
+#i6:checked ~ #six,
+#i7:checked ~ #seven,
+#i8:checked ~ #eight,
+#i9:checked ~ #nine {
+    z-index: 20;
+}
+#i1:checked ~ .nav #dot1,
+#i2:checked ~ .nav #dot2,
+#i3:checked ~ .nav #dot3,
+#i4:checked ~ .nav #dot4,
+#i5:checked ~ .nav #dot5,
+#i6:checked ~ .nav #dot6,
+#i7:checked ~ .nav #dot7,
+#i8:checked ~ .nav #dot8,
+#i9:checked ~ .nav #dot9{
+    background: #ffeaea;
+}
+footer{
+    text-align: center;
+    background: #441500;
+    width: 94%;
+    top: 0; right: 0;
+    z-index: 1000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding:20px 3%;
+    transition: 0,2s;
+}
+.share{
+    padding: 15px 0;
+    display: flex;
+    justify-content: center;
+    margin-right: 8px;
+}
+.share a{
+    width: 65px; /* ширина квадрату*/
+    height: 65px; /* висота квадрату */
+    margin-left: 20px;
+    text-decoration: none;
+    color: #fff4f4;
+    font-size: 30px; /* розмір іконки */
+    border: 1.5px solid #fff4f4;
+    display: flex;
+    align-items: center; 
+    justify-content: center;
+    border-radius: 50%;
+}
+.share a:hover{
+    color: rgb(72, 0, 0);
+    background:  #fff4f4;
 }

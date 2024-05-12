@@ -2,29 +2,60 @@
 <html>
 <head>
      <title>Schmalgauzen</title>
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
      <link rel="stylesheet" type="text/css" href="style.css">
 </head>
     <body bgcolor="#fff4f4">
-            <h1 align = "center">Головна сторінка</h1> 
-            <img src="img/Schmalgauzen_Home.jpg" width="390" height="260" align="left" hspace="20px"><br>
-                <b>Schmalgauzen</b> — це театрально-музичний український гурт, що був створений у 2020 
-                році у межах Університету, кіно і телебачення імені Карпенка Карого. Наразі, до його 
-                складу входять семеро учасників:  
-            <ul>
-                <li>Михайло Матюхін;</li>
-                <li>Кирило Липко;</li>
-                <li>Євген Запояско;</li>
-                <li>Владислав Михальчук;</li>
-                <li>Георгій Ярмоленко;</li>
-                <li>Роман Дебрін;</li>
-                <li>Андрій Ширко</li>
+        <!--header-->
+        <header>
+            <div class="logo">
+                <a href="main.html">Schmalgauzen</a>
+            </div>
+            <ul class="navbar">
+                <li><a href="main.html"><b class="sizeb current_page">Головна сторінка</b></a></li>
+                <li><a href="about.html"><b class="sizeb">Про гурт</b></a></li>
+                <li><a href="music.html"><b class="sizeb">Музика</b></a></li>
+                <li><a href="video.html"><b class="sizeb">Відео</b></a></li>
+                <li><a href="merch.html"><b class="sizeb">Мерч</b></a></li>
+                <li><a href="gallery.html"><b class="sizeb">Галерея</b></a></li>
             </ul>
-        <div class ="main">
-            <video controls poster="img/фото A tebe.png" width="700">
-                <source src="video/A tebe.mp4" type="video/mp4">
-            </video>
-            <div><i><font color="black">Матеріал взято з офіційного ютуб каналу гурту Schmalgauzen</font></i></div> <br>
-            <a href="index.html" title="Повернутись на головну"><img src="img/button.jpg" width="400pt"></a>
+        </header>
+        <!--banner-->
+        <section class="banner">
+            <h1>Schmalgauzen</h1>
+        </section>
+        <div id = "leftBlock"><h2></h2></div>
+        <!--main-->
+        <div id = "infoBlock">
+            <div class="firstBlock_main">
+                <img src="img/Schmalgauzen_main.jpg" class="main_image">
+                <p class="text-justify">
+                    <b>Schmalgauzen</b> — це театрально-музичний український гурт, що був створений у 2020 
+                    році у межах Університету, кіно і телебачення імені Карпенка Карого. Наразі, до його 
+                    складу входять шестеро учасників:  Михайло Матюхін, Кирило Липко, Євген Запояско, 
+                    Владислав Михальчук, Георгій Ярмоленко, Роман Дебрін.
+                </p>
+            </div>
+            <div class ="secondBlock_main">
+                <video controls poster="img/фото A tebe.png" class="main_video">
+                    <source src="video/A tebe.mp4" type="video/mp4">
+                </video>
+                <video controls poster="img/фото tetiana odesa film studio.png" class="main_video">
+                    <source src="video/tetiana odesa film studio.mp4" type="video/mp4">
+               </video>   
+            </div>
         </div>
+        <div id = "rightBlock"><h2></h2></div>
+        <!--footer-->
+        <footer>
+            <div class="share">
+                <a href="https://www.instagram.com/schmalgauzen/" class="fab fa-instagram"></a>
+                <a href="https://www.youtube.com/@schmalgauzen" class="fab fa-youtube"></a>
+                <a href="https://www.tiktok.com/@schmalgauzen?_t=8kSPp4hDPVN&_r=1" class="fab fa-tiktok"></a>
+                <a href="https://www.facebook.com/people/schmalgauzen/100039843828259/" class="fab fa-facebook-f"></a>
+                <a href="https://twitter.com/schmalgauzen?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor" class="fab fa-twitter"></a>
+                <a href="https://open.spotify.com/artist/1qqW4QBTgFMH2Vpzwboo8z?si=FMHEUFGyRem_5ry4Xz_wBA" class="fab fa-spotify"></a>
+            </div>
+        </footer> 
     </body>
 </html>
