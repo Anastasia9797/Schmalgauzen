@@ -5,10 +5,10 @@ p {
     color: rgb(66, 0, 0);
 }
 h1 {
-    font-size: 64pt;
+    font-size: 86pt;
     font-family: "Times New Roman";
     color:#fff4f4;
-    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.5);
+    text-shadow: 4px 4px 12px rgba(0, 0, 0, 0.7);
 }
 h2 { 
     font-size: 24pt;
@@ -45,6 +45,7 @@ header{
 /*Меню*/
 .navbar{
     display: flex;
+    list-style: none;
 }
 .navbar a {
     font-size: 16px;
@@ -80,7 +81,6 @@ header{
     text-decoration: underline;
 }
 *{
-    list-style: none;
     transition: all .2s linear;
     margin: 0; padding: 0;
 }
@@ -90,13 +90,13 @@ header{
     display: flex;
     align-items: center;
     justify-content: center;
-    background: url(img/Банер1.jpg) no-repeat;
+    background: url(img/Банер.png) no-repeat;
     min-height: 100vh;
-    background-size: cover;
-    background-position: center;
-    background-size: 100% auto;
-    margin-top: -40px;
+    background-position: center; 
+    background-size: 100%;
+    margin-top: 25px;
     transition: none;
+    border: 3px solid #000000;
 }
 /*Блоки*/
 #leftBlock, #rightBlock {
@@ -107,24 +107,47 @@ header{
     left: 50%;
 }
 #infoBlock {
-    width: 75%;
+    width: 81%;
     padding: 10px;
     float: left;
     left: 50%;
-    margin-top: -50px;
+    margin-top: 30px;
 }
 #leftBlock{
-    width: 10%;
+    width: 6%;
 }
 #rightBlock {
-    width:9%;
+    width:6%;
 }
 /*Для головної сторінки*/
-.main_image {
+.text_for_main {
+    text-align: center;
+    display: block;
     width: 49%;
+}
+.margin20px{
+    margin-bottom: 20px ;
+}
+.left-main{
+    margin-left: 15px;
+}
+.band-members {
+    margin-left: 10px;
+    padding: 10px;
+    font-size: 14pt;
+    font-family: "Times New Roman";
+    color: rgb(66, 0, 0);
+    font-weight: bold;
+}
+.band-members li {
+    margin-bottom: 5px;
+}
+.main_image {
+    width: 60%;
     height: auto;
     float: left;
     margin-right: 20px;
+    margin-left: 12px;
 }
 .firstBlock_main{
     display: flex;
@@ -134,29 +157,34 @@ video{
     width: 100%;
 }
 .main_video{
-    width: 49%;
+    width: 98%;
 }
 .transparent{
     color: rgba(0, 0, 0, 0.6);
 }
 .secondBlock_main{
+    margin-top: 30px;
+    text-align: center;
     margin-bottom: 20px;
     justify-content: space-between;
-    display: flex;
+    display: block;
+}
+.secondBlock_main h3{
+    margin-bottom: 10px;
 }
 /*Про гурт*/
 .about_left_image{
-    width: 500px;
+    width: 560px;
     float: left;
     margin-right: 20px;
 }
 .about_right_image{
-    width: 500px;
+    width: 560px;
     float: left;
     margin-left: 20px;
 }
 .about_left2_image{
-    width: 500px;
+    width: 560px;
     float: left;
     margin-right: 20px;
 }
@@ -197,8 +225,8 @@ video{
     position: relative;
     display: inline-block;
     overflow: hidden;
-    width: 250px;
-    height: 250px;
+    width: 270px;
+    height: 270px;
     margin: 3px;
     border: 1px solid rgba(0, 0, 0, 0.117);
 }
@@ -244,10 +272,10 @@ video{
     margin-bottom:15px;
 }
 .title_and_video video {
-    height: 300px;
+    height: 310px;
 }
 .title_and_video video[poster="img/фото Сірі туфлі.png"] {
-    height: 335px;
+    height: 365px;
 }
 .for_coment_under_videos p{
     text-align: center;
@@ -271,8 +299,8 @@ video{
 }
 .merch-container{
     overflow: hidden; 
-    width: 320px;
-    height: 260px;
+    width: 340px;
+    height: 280px;
     border: 1px solid rgba(0, 0, 0, 0.117); 
 }
 .merch_picture{
@@ -373,6 +401,7 @@ video{
 .slide_img{
     z-index: -1;
 }
+/* Встановлення z-index для поточного слайда і відповідної точки навігації */
 #i1:checked ~ #one,
 #i2:checked ~ #two,
 #i3:checked ~ #three,
@@ -384,6 +413,7 @@ video{
 #i9:checked ~ #nine {
     z-index: 20;
 }
+/* Підсвічування відповідної точки навігації під час вибору зображення */
 #i1:checked ~ .nav #dot1,
 #i2:checked ~ .nav #dot2,
 #i3:checked ~ .nav #dot3,
@@ -395,6 +425,7 @@ video{
 #i9:checked ~ .nav #dot9{
     background: #ffeaea;
 }
+/* Нижня частина сайту */
 footer{
     text-align: center;
     background: #441500;
@@ -427,6 +458,10 @@ footer{
     border-radius: 50%;
 }
 .share a:hover{
-    color: rgb(72, 0, 0);
+    color: #480000;
     background:  #fff4f4;
+}
+.whitep{
+    margin-top: 10px;
+    color: #fff4f4;
 }
